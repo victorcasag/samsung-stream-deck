@@ -1,0 +1,128 @@
+{
+  "Actions": [
+    {
+      "Icon": "icons/scene",
+      "Name": "Scene",
+      "States": [
+        {
+          "Image": "icons/scene_action"
+        }
+      ],
+      "Tooltip": "Scenes",
+      "UUID": "com.thibautsabot.streamdeck.scene"
+    },
+    {
+      "Icon": "icons/device",
+      "Name": "Device",
+      "States": [
+        {
+          "Image": "icons/device_off",
+          "Name": "Off",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        },
+        {
+          "Image": "icons/device_on",
+          "Name": "On",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Tooltip": "SmartThings Device",
+      "UUID": "com.thibautsabot.streamdeck.device",
+      "Controllers": ["Keypad"],
+      "UserTitleEnabled": true
+    },
+    {
+      "Icon": "icons/device",
+      "Name": "Light",
+      "States": [
+        {
+          "Image": "icons/device_off",
+          "Name": "Off",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        },
+        {
+          "Image": "icons/device_on",
+          "Name": "On",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Tooltip": "SmartThings Light",
+      "UUID": "com.thibautsabot.streamdeck.light",
+      "Controllers": ["Keypad"],
+      "UserTitleEnabled": true
+    },
+    {
+      "Icon": "icons/device",
+      "Name": "Switch",
+      "States": [
+        {
+          "Image": "icons/device_off",
+          "Name": "Off",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        },
+        {
+          "Image": "icons/device_on",
+          "Name": "On",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Tooltip": "SmartThings Switch",
+      "UUID": "com.thibautsabot.streamdeck.switch",
+      "Controllers": ["Keypad"],
+      "UserTitleEnabled": true
+    },
+    {
+      "Icon": "icons/garage_door_closed",
+      "Name": "Garage Door",
+      "States": [
+        {
+          "Image": "icons/garage_door_closed",
+          "Name": "Closed",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        },
+        {
+          "Image": "icons/garage_door_open",
+          "Name": "Open",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Tooltip": "SmartThings Garage Door",
+      "UUID": "com.thibautsabot.streamdeck.garagedoor",
+      "Controllers": ["Keypad"],
+      "UserTitleEnabled": true
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "thibautsabot",
+  "Category": "Smartthings",
+  "CategoryIcon": "icons/smartthings_cat",
+  "CodePath": "public/plugin.html",
+  "PropertyInspectorPath": "public/property-inspector.html",
+  "Description": "Smartthings actions",
+  "Name": "Smartthings",
+  "Icon": "icons/smartthings",
+  "URL": "https://www.elgato.com/en/gaming/stream-deck",
+  "Version": "1.0.0",
+  "OS": [
+    {
+        "Platform": "mac", 
+        "MinimumVersion" : "10.11"
+    },
+    {
+        "Platform": "windows", 
+        "MinimumVersion" : "10"
+    }
+  ],
+  "Software": 
+    {
+        "MinimumVersion" : "4.1"
+  }
+}
