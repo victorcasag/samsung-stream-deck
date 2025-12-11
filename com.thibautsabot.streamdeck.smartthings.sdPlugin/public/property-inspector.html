@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>com.thibautsabot.streamdeck.smartthings.pi</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="sdpi.css">
-        <script src="./dist/smartthings-property-inspector-bundle.js"></script>
-    </head>
-    <body>
-        <div class="sdpi-wrapper" id="mainSettings">
-            <div class="sdpi-item">
-                <div class="sdpi-item-label host-label">Personal access token</div>
-                <input class="sdpi-item-value" type="text" id="accesstoken">
-            </div>
-            <div class="sdpi-item">
-                <div class="sdpi-item-label">Validate</div>
-                <button class="sdpi-item-value" id="validate_button">default validate value</button>
-            </div>
-            <div class="sdpi-item">
-                <div class="sdpi-item-label" id="select_label">Default select value</div>
-                    <select class="sdpi-item-value select" id="select_value"></select>
-            </div>
-            <div class="sdpi-item">
-                <div class="hidden" id="behaviour">
-                    <div class="sdpi-item-label">Behaviour</div>
-                    <fieldset>
-                        <legend>Select a behaviour</legend>
-                        <div>
-                            <input type="radio" id="toggle" name="behaviour" value="toggle"
-                                    checked>
-                            <label for="toggle">Toggle</label><br/>
-                            <input type="radio" id="more" name="behaviour" value="more">
-                            <label for="more">Brighter</label><br/>
-                            <input type="radio" id="less" name="behaviour" value="less">
-                            <label for="less">Darker</label>
-                        </div>
-                    </fieldset>
-                </div>
+
+<head>
+    <title>com.thibautsabot.streamdeck.smartthings.pi</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="sdpi.css">
+    <script src="./dist/smartthings-property-inspector-bundle.js"></script>
+</head>
+
+<body>
+    <div class="sdpi-wrapper" id="mainSettings">
+        <div class="sdpi-item">
+            <div class="sdpi-item-label host-label">Personal access token</div>
+            <input class="sdpi-item-value" type="text" id="accesstoken">
+        </div>
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Validate</div>
+            <button class="sdpi-item-value" id="validate_button">default validate value</button>
+        </div>
+        <div class="sdpi-item">
+            <div class="sdpi-item-label" id="select_label">Default select value</div>
+            <select class="sdpi-item-value select" id="select_value"></select>
+        </div>
+        <div class="sdpi-item">
+            <div class="hidden" id="behaviour_row">
+                <div class="sdpi-item-label">Behaviour</div>
+                <select class="sdpi-item-value select" id="behaviour_select"></select>
             </div>
         </div>
-    </body>
+        <div class="sdpi-item hidden" id="ac_mode_row">
+            <div class="sdpi-item-label">AC mode</div>
+            <select class="sdpi-item-value select" id="ac_mode_value"></select>
+        </div>
+        <div class="sdpi-item hidden" id="ac_temperature_row">
+            <div class="sdpi-item-label">AC temperature</div>
+            <input class="sdpi-item-value" type="number" id="ac_temperature_value" step="0.5">
+        </div>
+        <div class="sdpi-item hidden" id="ac_temperature_step_row">
+            <div class="sdpi-item-label">Temp step</div>
+            <input class="sdpi-item-value" type="number" id="ac_temperature_step_value" min="0.5" step="0.5" value="1">
+        </div>
+        <div class="sdpi-item hidden" id="device_capabilities_row">
+            <div class="sdpi-item-label">Capabilities</div>
+            <div class="sdpi-item-value" id="device_capabilities_hint"></div>
+        </div>
+    </div>
+</body>
+
 </html>
