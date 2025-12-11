@@ -2,7 +2,6 @@ import {
   DeviceSettingsInterface,
   GlobalSettingsInterface,
   SceneSettingsInterface,
-  AirConditionerSettingsInterface,
 } from './interface'
 
 export function isGlobalSettingsSet(
@@ -21,44 +20,6 @@ export function isSceneSetting(
   settings: SceneSettingsInterface | unknown
 ): settings is SceneSettingsInterface {
   return (settings as SceneSettingsInterface).sceneId !== undefined
-}
-
-export function isAirConditionerSetting(
-  settings: AirConditionerSettingsInterface | unknown
-): settings is AirConditionerSettingsInterface {
-  return (settings as AirConditionerSettingsInterface).controlType !== undefined
-}
-
-// Device type identification based on capabilities
-export function getDeviceType(device: any): string {
-  const components = device.components?.main || {}
-
-  // Check for air conditioner
-  if ('airConditionerMode' in components || 'thermostatCoolingSetpoint' in components) {
-    return '❄️ AC'
-  }
-
-  // Check for garage door
-  if ('doorControl' in components) {
-    return '🚪 Garage'
-  }
-
-  // Check for light (has switchLevel capability)
-  if ('switchLevel' in components && 'switch' in components) {
-    return '💡 Light'
-  }
-
-  // Check for TV
-  if ('mediaPlayback' in components || 'audioVolume' in components) {
-    return '📺 TV'
-  }
-
-  // Check for switch (only has switch capability)
-  if ('switch' in components) {
-    return '🔌 Switch'
-  }
-
-  return '⚙️ Device'
 }
 
 interface FetchAPI {
