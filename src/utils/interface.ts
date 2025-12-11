@@ -15,8 +15,3 @@ export interface DeviceSettingsInterface extends CommonSettingsInterface {
   deviceId: string
   behaviour: string
 }
-
-export interface AirConditionerSettingsInterface extends CommonSettingsInterface {
-  deviceId: string
-  controlType: 'power' | 'mode' | 'temp_up' | 'temp_down' | 'fan_mode' | 'swing_vertical' | 'swing_horizontal' | 'windfree'
-}
