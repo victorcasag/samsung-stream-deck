@@ -98,6 +98,140 @@
       "UUID": "com.thibautsabot.streamdeck.garagedoor",
       "Controllers": ["Keypad"],
       "UserTitleEnabled": true
+    },
+    {
+      "Icon": "icons/ac",
+      "Name": "AC Power",
+      "States": [
+        {
+          "Image": "icons/ac_off",
+          "Name": "Off",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        },
+        {
+          "Image": "icons/ac_on",
+          "Name": "On",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Tooltip": "Air Conditioner Power Toggle",
+      "UUID": "com.thibautsabot.streamdeck.ac_power",
+      "Controllers": ["Keypad"],
+      "UserTitleEnabled": true
+    },
+    {
+      "Icon": "icons/ac_mode",
+      "Name": "AC Mode",
+      "States": [
+        {
+          "Image": "icons/ac_mode",
+          "Name": "Mode",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Tooltip": "Cycle Air Conditioner Mode (Cool/Heat/Fan/Dry/Auto)",
+      "UUID": "com.thibautsabot.streamdeck.ac_mode",
+      "Controllers": ["Keypad"],
+      "UserTitleEnabled": true
+    },
+    {
+      "Icon": "icons/temp_up",
+      "Name": "AC Temp Up",
+      "States": [
+        {
+          "Image": "icons/temp_up",
+          "Name": "Temp+",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Tooltip": "Increase Temperature",
+      "UUID": "com.thibautsabot.streamdeck.ac_temp_up",
+      "Controllers": ["Keypad"],
+      "UserTitleEnabled": true
+    },
+    {
+      "Icon": "icons/temp_down",
+      "Name": "AC Temp Down",
+      "States": [
+        {
+          "Image": "icons/temp_down",
+          "Name": "Temp-",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Tooltip": "Decrease Temperature",
+      "UUID": "com.thibautsabot.streamdeck.ac_temp_down",
+      "Controllers": ["Keypad"],
+      "UserTitleEnabled": true
+    },
+    {
+      "Icon": "icons/fan_mode",
+      "Name": "AC Fan Mode",
+      "States": [
+        {
+          "Image": "icons/fan_mode",
+          "Name": "Fan",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Tooltip": "Cycle Fan Mode (Auto/Low/Medium/High/Turbo)",
+      "UUID": "com.thibautsabot.streamdeck.ac_fan_mode",
+      "Controllers": ["Keypad"],
+      "UserTitleEnabled": true
+    },
+    {
+      "Icon": "icons/swing_vertical",
+      "Name": "AC Swing Vertical",
+      "States": [
+        {
+          "Image": "icons/swing_vertical",
+          "Name": "V-Swing",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Tooltip": "Toggle Vertical Swing",
+      "UUID": "com.thibautsabot.streamdeck.ac_swing_vertical",
+      "Controllers": ["Keypad"],
+      "UserTitleEnabled": true
+    },
+    {
+      "Icon": "icons/swing_horizontal",
+      "Name": "AC Swing Horizontal",
+      "States": [
+        {
+          "Image": "icons/swing_horizontal",
+          "Name": "H-Swing",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Tooltip": "Toggle Horizontal Swing",
+      "UUID": "com.thibautsabot.streamdeck.ac_swing_horizontal",
+      "Controllers": ["Keypad"],
+      "UserTitleEnabled": true
+    },
+    {
+      "Icon": "icons/windfree",
+      "Name": "AC WindFree",
+      "States": [
+        {
+          "Image": "icons/windfree",
+          "Name": "WindFree",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "Tooltip": "Toggle WindFree Mode (Samsung)",
+      "UUID": "com.thibautsabot.streamdeck.ac_windfree",
+      "Controllers": ["Keypad"],
+      "UserTitleEnabled": true
     }
   ],
   "SDKVersion": 2,
